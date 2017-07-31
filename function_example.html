@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id = "phrase1"> Functions </h1>
+<button onclick="randomize()">Click Me!</button>
+
+<div>
+  <p id="phrase2">Hello World</p>
+</div>
+
+<script>
+function randomize() {
+  document.getElementById('phrase1').style.color = randomColors();
+  document.getElementById('phrase2').style.color = randomColors();
+}
+
+
+function randomColors() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+
+</script>
+
+
+</body>
+</html>
